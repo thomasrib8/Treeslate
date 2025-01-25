@@ -33,7 +33,7 @@ def calculate_review_cost(words, reviewer_choice):
     if reviewer_choice == "TOBY":
         return words * 0.025
     elif reviewer_choice == "TOBY+MIKE":
-        return pages * 0.025
+        return words * 0.025
     elif reviewer_choice == "MIKE":
         return 0
     else:
