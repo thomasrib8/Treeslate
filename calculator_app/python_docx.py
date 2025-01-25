@@ -29,11 +29,11 @@ def calculate_translation_cost(words, characters, translation_time_min):
     step3_cost = translation_time_min * 0.005161  # Web app cost
     return step1_cost + step2_cost + step3_cost
 
-def calculate_review_cost(pages, reviewer_choice):
+def calculate_review_cost(words, reviewer_choice):
     if reviewer_choice == "TOBY":
-        return pages * 2.51
+        return words * 0.025
     elif reviewer_choice == "TOBY+MIKE":
-        return pages * 2.51
+        return pages * 0.025
     elif reviewer_choice == "MIKE":
         return 0
     else:
